@@ -1,0 +1,15 @@
+<nz-modal
+  [(nzVisible)]="visible"
+  nzTitle="请授权登录"
+  [nzOkLoading]="submiting"
+  (nzOnCancel)="hanldeCancel()"
+  (nzOnOk)="login()"
+>
+  <ng-container *nzModalContent>
+    <p>请在下方输入您的TOKEN进行登录校验</p>
+    <input nz-input placeholder="请输入TOKEN" [(ngModel)]="token" maxlength="100" autofocus />
+    <p style="margin-top: 15px;">
+      ghp_lw9Hw5EAau2wlWMlIllGIuGWLVxrOd2SfBI
+    </p>
+  </ng-container>
+</nz-modal>
